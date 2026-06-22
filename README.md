@@ -23,13 +23,12 @@ PlanAR es una aplicación web para descubrir eventos, recitales, ferias y activi
 - **Mostrar categorías:** muestra un array `["Conciertos", "Ferias", "Deportes"]` renderizado dinámicamente con JavaScript.
 - **Volver al inicio:** botón que redirige a `index.html`.
 
-## Tabla de Registro de Errores (QA)
+## Registro de Pruebas (QA)
 
-| N° | Error encontrado | Pasos para reproducirlo | Resultado esperado | Solución aplicada |
-|----|-----------------|-------------------------|--------------------|-------------------|
-| 1  |                 | 1. <br>2. <br>3.        |                    |                   |
-| 2  |                 | 1. <br>2. <br>3.        |                    |                   |
-| 3  |                 | 1. <br>2. <br>3.        |                    |                   |
+| ID | Componente/Funcionalidad | Comportamiento Esperado | Resultado | Notas/Correcciones |
+|:---|:-------------------------|:------------------------|:----------|:-------------------|
+| 1  | Botón "Reservar lugar"   | Mostrar mensaje de confirmación en la página sin usar alert(). | Exitoso | Se agregó manipulación del DOM con estilos dinámicos. |
+| 2  | Botón "Mostrar categorías"| Desplegar la lista de categorías desde un array. | Exitoso | Se corrigió un error donde la lista se duplicaba al presionar el botón repetidas veces vaciando el contenedor antes de renderizar. |
 
 ## Diseño de Arquitectura
 
